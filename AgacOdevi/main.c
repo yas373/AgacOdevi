@@ -64,6 +64,7 @@ void ekle(struct ikili_arama_agaci *agac,int icerik){
     
 }
 static int toplam =0;
+
 void hesapla(struct dugum *kok, int derinlik){
     
     if(kok==NULL) return;
@@ -114,7 +115,7 @@ int main(int argc, char** argv) {
     hesapla(agac->kok,0);
     printf("Inorder Siralanmis Hali : \n");
     listele(agac->kok);
-    printf("\nToplam : %d \n",toplam);
+    printf("\nToplam : %d \n",toplam/n);
     return (EXIT_SUCCESS);
 }
 
